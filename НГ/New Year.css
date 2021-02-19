@@ -1,0 +1,39 @@
+
+
+html{background-color:black} 
+.countdown{width:100%;float:left;margin:10px auto} 
+.timer{font:40px Courier;color:#fff;text-align:center}
+h2{color:gray; text-align:center ;}
+
+.timer {
+    color:white;
+    background-color:black;
+    animation-name:colorchange;
+    animation-duration:1.3s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+
+@keyframes colorchange {
+    0% {color:red;}
+    1% {color:red;}
+    49% {color:black;}
+    50% {color:black;}
+    99% {color:red;}
+    100% {color:red;}
+}
+
+a {
+    text-decoration:none;
+    color:red;
+}
+
+sup {
+    color:gray;
+}
+
+p {
+    text-align:center;
+}

@@ -1,0 +1,53 @@
+body{
+	position: relative;
+	background-color: #000;
+	color: #fff;
+}
+img{
+	position: absolute;
+	left: 50px;
+	top: 50px;}
+/*  */
+.img1{
+	animation-name:rotation1;
+	animation-duration:11s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+@keyframes rotation1 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.img2{
+	animation-name:rotation2;
+	animation-duration:9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+@keyframes rotation2 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.img3{
+	animation-name:rotation3;
+	animation-duration:7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+@keyframes rotation3 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.img4{
+	animation-name:rotation4;
+	animation-duration:5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+@keyframes rotation4 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+ <head> 
+ <style> 
+@font-face { 
+font-family: 'font3a932754de1104ba22ef6e2f0b6dbeca'; 
+src: 
+url('https://nomail.com.ua/files/eot/3a932754de1104ba22ef6e2f0b6dbeca.eot?#iefix') format('embedded-opentype'), 
+url('https://nomail.com.ua/files/woff/3a932754de1104ba22ef6e2f0b6dbeca.woff') format('woff'), 
+url('https://nomail.com.ua/files/woff2/3a932754de1104ba22ef6e2f0b6dbeca.woff2') format('woff2'); 
+} 
+@font-face { font-family: 'Orbitron-Black'; src: local('Orbitron-Black'), url('https://nomail.com.ua/files/woff/3a932754de1104ba22ef6e2f0b6dbeca.woff') format('woff'); } 
+#orbitronblack { font-family:'Orbitron-Black'; } 
+.font3a932754de1104ba22ef6e2f0b6dbeca { font-family: 'font3a932754de1104ba22ef6e2f0b6dbeca'; } 
+</style> 
+ 
+<noscript><div><img src="https://mc.yandex.ru/watch/68522122" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+ 
+<style> 
+@font-face { 
+font-family: 'font2f48abc8c45de9add264c5be432e878e'; 
+src:url('https://nomail.com.ua/files/eot/2f48abc8c45de9add264c5be432e878e.eot?#iefix') format('embedded-opentype'), 
+url('https://nomail.com.ua/files/woff/2f48abc8c45de9add264c5be432e878e.woff') format('woff'), 
+url('https://nomail.com.ua/files/woff2/2f48abc8c45de9add264c5be432e878e.woff2') format('woff2'); 
+} 
+@font-face { font-family: 'HACKED'; src: local('HACKED'), url('https://nomail.com.ua/files/woff/2f48abc8c45de9add264c5be432e878e.woff') format('woff'); } 
+#hacked { font-family:'HACKED'; } 
+.font2f48abc8c45de9add264c5be432e878e { font-family: 'font2f48abc8c45de9add264c5be432e878e'; } 
+</style> 
+ <title>NEW YEAR</title> 
+ </head> 
+ <body> 
+ <h2>The new Year will come in:</h2> 
+ </div> 
+ <div class="countdown"> 
+ <p class="timer"> 
+ <span id="days"></span> <span id="hours"></span> 
+ <span id="minutes"></span> 
+ <span id="seconds"></span> 
+ </p> 
+ </div> 
+<style> 
+html{background-color:black} 
+.countdown{width:100%;float:left;margin:10px auto} 
+.timer{font:40px Courier;color:#fff;text-align:center} 
+h2{color:gray; text-align:center ; font-family:Orbitron-Black;} 
+h2{font-size:60px; } 
+.timer { 
+ font-family:HACKED; color:white; 
+ font-size:100px; 
+ background-color:black; 
+ animation-name:colorchange; 
+ animation-duration:1.3s; 
+ animation-iteration-count: infinite; 
+ animation-timing-function: cubic-bezier(0, 0, 0, 0); 
+} 
+@keyframes colorchange { 
+ 0% {color:red;} 
+ 1% {color:red;} 
+ 49% {color:#090909;} 
+ 50% {color:#090909;} 
+ 99% {color:red;} 
+ 100% {color:red;} 
+} 
+ 
+a { 
+ text-decoration:none; 
+ color:red; 
+} 
+ 
+sup { 
+ color:gray; 
+} 
+ 
+p { 
+ text-align:center; 
+}</style> 
+ 
+<script> 
+function countdown(dateEnd) { 
+ var timer, days, hours, minutes, seconds; 
+ 
+ dateEnd = new Date(dateEnd); 
+ dateEnd = dateEnd.getTime(); 
+ 
+ if ( isNaN(dateEnd) ) { 
+ return; 
+ } 
+ 
+ timer = setInterval(calculate, 1000); 
+ 
+ function calculate() { 
+ var dateStart = new Date(); 
+ var dateStart = new Date(dateStart.getUTCFullYear(), 
+ dateStart.getUTCMonth(), 
+ dateStart.getUTCDate(), 
+ dateStart.getUTCHours(), 
+ dateStart.getUTCMinutes(), 
+ dateStart.getUTCSeconds()); 
+ var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000 - 3600*3) 
+ 
+ if ( timeRemaining >= 0 ) { 
+ days = parseInt(timeRemaining / 86400); 
+ timeRemaining = (timeRemaining % 86400); 
+ hours = parseInt(timeRemaining / 3600); 
+ timeRemaining = (timeRemaining % 3600); 
+ minutes = parseInt(timeRemaining / 60); 
+ timeRemaining = (timeRemaining % 60); 
+ seconds = parseInt(timeRemaining); 
+ 
+ document.getElementById("days").innerHTML = parseInt(days, 10); 
+ document.getElementById("hours").innerHTML = ("0" + hours).slice(-2); 
+ document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2); 
+ document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2); 
+ } else { 
+ return; 
+ } 
+ } 
+ 
+ function display(days, hours, minutes, seconds) {} 
+} 
+ 
+countdown('12/31/2021 21:00:00');</script> 
+ </body> 
+</html>
