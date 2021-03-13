@@ -1,0 +1,21 @@
+body {
+	background-color:black;
+	
+}
+
+.number {
+	display:block;
+	border:1px solid red;
+	background-color:black;
+	color:#ffaa44;
+}
+
+.number:focuc{
+	border:1px solid #ffffff;
+}
+
+.convert {
+	width:100px;
+	height:24px;
+	display:block;
+}
